@@ -1,0 +1,52 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-image: linear-gradient(to bottom right, rgb(157, 188, 231), rgb(235, 235, 241))
+}
+
+h2 {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.qgrid {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.qrow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+ul.qrow li {
+    margin: 10px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input:checked {
+    opacity: 0.2;
+    background-color: blue;
+
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
