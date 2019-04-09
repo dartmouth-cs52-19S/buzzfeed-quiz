@@ -21,16 +21,16 @@ $('#endButton').on('click', function(e) {
     max_element = Math.max(a, b, c, d);
 
     if (max_element == a) {
-        alert("a");
+        alert("Sanborn");
 
     } else if (max_element == b) {
-        alert("b");
+        alert("FFB");
         
     } else if (max_element == c) {
-        alert("c");
+        alert("Tower");
         
     } else if (max_element == d) {
-        alert("d");
+        alert("Kresge");
         
     }
     else {
