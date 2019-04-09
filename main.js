@@ -6,7 +6,7 @@ $('#endButton').on('click', function(e) {
 
     if (choices.length < 5) {
         var qleft = 5-choices.length;
-        alert("You haven't answered " + qleft + " questions!");
+        alert("You haven't resulted " + qleft + " questions!");
         return;
     };
 
@@ -19,23 +19,28 @@ $('#endButton').on('click', function(e) {
         else if (element == '4') d++;
     });
     max_element = Math.max(a, b, c, d);
-
+    var result;
     if (max_element == a) {
-        alert("Sanborn");
+        result = 'Sanborn';
+        
 
     } else if (max_element == b) {
-        alert("FFB");
+        result = 'FFB';
         
     } else if (max_element == c) {
-        alert("Tower");
+        result = 'Tower';
         
     } else if (max_element == d) {
-        alert("Kresge");
+        result = 'Kresge';
         
     }
     else {
         alert("Error");
+        return;
     }
+
+    $( "body" ).append( "<div class='result'>"+result+"</div>");
+    
     
     // now you have an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
     // you'll need to do some calculations with this
@@ -46,8 +51,9 @@ $('#endButton').on('click', function(e) {
 $('label').click(function()
     {
         newid = $(this).parent().parent().parent().attr('id')
-        $("#" + newid).find("label").css("opacity", 0.1);
+        $("#" + newid).find("label").css("opacity", 0.5);
+        $("#" + newid).find("label").find("img").css("border", "0px solid #a3152c");
 
         $(this).css("opacity", 1);
-        $(this).css("border", "3px solid #a3152c");
+        $(this).find("img").css("border", "10px solid #a3152c");
 }); 

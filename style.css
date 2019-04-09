@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -6,8 +10,31 @@ body {
     background-image: linear-gradient(to bottom right, rgb(157, 188, 231), rgb(235, 235, 241))
 }
 
+header {
+    background-image: url(assets/head.jpg);
+    color:white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 80vw;
+    margin: 20px;
+    padding: 2px;
+}
+
+.question {
+    background-color: aqua;
+    text-align: center;
+    font-size: 3.5vw;
+    width: 60%;
+    height: 10%;
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
+}
+
 h2 {
     color: white;
+    background-image: './assets/c2.jpg';
 }
 
 ul {
@@ -17,8 +44,6 @@ ul {
 .qgrid {
     display: flex;
     flex-flow: column nowrap;
-    align-content: center;
-    justify-content: center;
 }
 
 .qrow {
@@ -29,7 +54,7 @@ ul {
 }
 
 ul.qrow li {
-    margin: 10px;
+    margin: 5px;
 }
 
 input[type=radio] {
@@ -49,4 +74,33 @@ img:hover {
 img {
     height: 200px;
     width: 200px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 200px;
+    align-self: center;
+    background-color: rgb(238, 85, 85);
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 40px;
+}
+
+.result {
+    background-image: linear-gradient(to bottom right, rgb(247, 24, 8), rgb(98, 36, 168));
+    border: 2px dotted wheat;
+    color: aliceblue;
+    text-align: center;
+    font-size: 3.5vw;
+    width: 60%;
+    height: 10%;
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
 }

@@ -15,9 +15,12 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
-        <h1>WHAT DARTMOUTH LIBRARY ARE YOU</h1>
+        <header>
+            <h1>WHAT DARTMOUTH LIBRARY ARE YOU</h1>
+            <p>A Quiz With Absolutely No Accuracy</p>
+        </header>
 
-        <h2>Which is your favourite puppy?</h2>
+        <div class="question">Which is your favourite puppy?</div>
         <div class="qgrid" id="puppy">
             <ul class="qrow">
                 <li>
@@ -49,8 +52,7 @@
             </ul>
         </div>
 
-        
-        <h2>Favourite Disney Movie</h2>
+        <div class="question">Favourite Disney Movie</div>
         <div class="qgrid" id="disney">
                 <ul class="qrow">
                     <li>
@@ -82,7 +84,8 @@
                 </ul>
         </div>
 
-        <h2>What's your favourite colour</h2>
+
+        <div class="question">What's your favourite colour</div>
         <div class="qgrid" id="colour">
             <ul class="qrow">
                 <li>
@@ -114,7 +117,7 @@
             </ul>
         </div>
 
-        <h2>What's your favourite weird food combo</h2>
+        <div class="question">What's your favourite weird food combo</div>
         <div class="qgrid" id="food">
             <ul class="qrow">
                 <li>
@@ -146,39 +149,43 @@
             </ul>
         </div>
 
-        <h2>Ideal Friday Night?</h2>
+        <div class="question">Ideal Friday Night?</div>
         <div class="qgrid" id="fnight">
             <ul class="qrow">
                 <li>
                     <label>
-                            <img src="assets\d1.jpg" value="1"/>
-                            <input type="radio" name="fav_n" value="1"/>
+                            <img src="assets\fn1.jpg" value="1"/>
+                            <input type="radio" name="fav_fn" value="1"/>
                     </label>
                 </li>
                 <li>
                     <label>
-                            <img src="assets\d2.jpg" value="2"/>
-                            <input type="radio" name="fav_n" value="2"/>
+                            <img src="assets\fn2.jpg" value="2"/>
+                            <input type="radio" name="fav_fn" value="2"/>
                     </label>
                 </li>
             </ul>
             <ul class="qrow"> 
                 <li>
                     <label>
-                            <img src="assets\d3.jpg" value="3"/>
-                            <input type="radio" name="fav_n" value="3"/>
+                            <img src="assets\fn3.jpg" value="3"/>
+                            <input type="radio" name="fav_fn" value="3"/>
                     </label>
                 </li>
                 <li>
                     <label>
-                            <img src="assets\d4.jpg" value="4"/>
-                            <input type="radio" name="fav_n" value="4"/>
+                            <img src="assets\fn4.jpg" value="4"/>
+                            <input type="radio" name="fav_fn" value="4"/>
                     </label>
                 </li>
             </ul>
         </div>
 
         <button id="endButton">Get Result</button>
+
+        <footer>
+            
+        </footer>
 
         <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
