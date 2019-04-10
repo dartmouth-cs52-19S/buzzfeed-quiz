@@ -1,9 +1,7 @@
-let nquestions = 0;
+let nquestions = 0; // holds value of no. of q's
+
+// Reads in JSON data
 $.getJSON("data.json", function(data) {
-    // now you can do something with this data. 
-    // remember you can only work with the data in this callback
-    // data.title has the title
-    // maybe you want to loop through data.questions? 
     $( "body" ).append( "<header> <h1>"+data.title+"</h1> </header>");
     data.questions.forEach( (q, i) => {
         nquestions += 1;
@@ -35,6 +33,7 @@ $.getJSON("data.json", function(data) {
 
 
 $(document).ready(function(){
+    // Handler to calculate value when button is pressed
     $('#endButton').on('click', function(e) {
         // gather all checked radio-button values
         var choices = $("input[type='radio']:checked").map(function(i, radio) {
@@ -63,6 +62,7 @@ $(document).ready(function(){
         let max_element = Math.max(a, b, c, d);
         var result;
 
+        // COMPLEX SCORING, mix of sum-based scoring and mode-based scoring 
         if (sum == 15) {
             result = "Psi U Basement";
         }
@@ -89,13 +89,17 @@ $(document).ready(function(){
             return;
         }
 
-        $( "body" ).find("div.result").remove();
+        $( "body" ).find("div.result").remove(); // removes previous result if any
         $( "body" ).append( "<div class='result'>"+result+"</div>");
+        // Code to animate result
         $(".result").hide();
         $(".result").show(3000).slideDown();
+        
+        // Slide down to result
+        $('html, body').animate({ scrollTop:  $(".result").offset.top() }, 'slow');
     }); 
 
-
+    // Handler for clicking on an answer option 
     $('label').click(function()
         {
             newid = $(this).parent().parent().parent().attr('id')
