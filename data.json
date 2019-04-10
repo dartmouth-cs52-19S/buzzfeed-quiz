@@ -64,22 +64,22 @@
             "id": "colour",
             "answers": [
                 {
-                    "text": "Purple",
+                    "text": "Black",
                     "img_url": "assets/c1.jpg",
                     "outcome": "1"
                 },
                 {
-                    "text": "Loud",
+                    "text": "Blue",
                     "img_url": "assets/c2.jpg",
                     "outcome": "2"
                 },
                 {
-                    "text": "Magenta",
+                    "text": "Green",
                     "img_url": "assets/c3.jpg",
                     "outcome": "3"
                 },
                 {
-                    "text": "Dartmouth",
+                    "text": "Pink",
                     "img_url": "assets/c4.jpg",
                     "outcome": "4"
                 }
