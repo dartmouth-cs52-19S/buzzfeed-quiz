@@ -74,6 +74,11 @@ ul.qrow li {
     margin: 5px;
 }
 
+p {
+    text-align: center;
+    color: grey;
+}
+
 input[type=radio] {
     display: none;
 }
@@ -113,4 +118,15 @@ button {
     justify-self: center;
     align-self: center;
     padding: 5px;
+}
+
+@media only screen and (max-width: 640px) {
+    * {
+        flex-direction: column;
+    }
+
+    .qrow {
+        flex-flow: column nowrap;
+        padding: 1vh;
+    }
 }

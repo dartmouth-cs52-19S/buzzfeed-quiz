@@ -1,10 +1,6 @@
 {
     "title": "WHAT DARTMOUTH LIBRARY ARE YOU?",
     "img": "assets/head.jpg",
-    "outcomes": {
-            "outcome1": {"img": "img/outcome1.jpg", "text": "outcome 1"},
-            "outcome2": {"img": "img/outcome2.jpg", "text": "outcome 2"}
-    },
     "questions": [
         {
             "question_name": "Which is your favourite puppy?",
@@ -12,22 +8,22 @@
             "id": "puppy",
             "answers": [
                 {
-                    "text": "",
+                    "text": "doggo",
                     "img_url": "assets/pp.jpg",
                     "outcome": "1"
                 },
                 {
-                    "text": "",
+                    "text": "snoof",
                     "img_url": "assets/pp2.jpg",
                     "outcome": "2"
                 },
                 {
-                    "text": "",
+                    "text": "pupper",
                     "img_url": "assets/pp3.jpg",
                     "outcome": "3"
                 },
                 {
-                    "text": "",
+                    "text": "floof",
                     "img_url": "assets/pp4.jpg",
                     "outcome": "4"
                 }
@@ -40,22 +36,22 @@
             "id": "disney",
             "answers": [
                 {
-                    "text": "",
+                    "text": "Aladdin",
                     "img_url": "assets/d1.jpg",
                     "outcome": "1"
                 },
                 {
-                    "text": "",
+                    "text": "Mulan",
                     "img_url": "assets/d2.jpg",
                     "outcome": "2"
                 },
                 {
-                    "text": "",
+                    "text": "Frozen",
                     "img_url": "assets/d3.jpg",
                     "outcome": "3"
                 },
                 {
-                    "text": "",
+                    "text": "Lion King",
                     "img_url": "assets/d4.jpg",
                     "outcome": "4"
                 }
@@ -68,22 +64,22 @@
             "id": "colour",
             "answers": [
                 {
-                    "text": "",
+                    "text": "Purple",
                     "img_url": "assets/c1.jpg",
                     "outcome": "1"
                 },
                 {
-                    "text": "",
+                    "text": "Loud",
                     "img_url": "assets/c2.jpg",
                     "outcome": "2"
                 },
                 {
-                    "text": "",
+                    "text": "Magenta",
                     "img_url": "assets/c3.jpg",
                     "outcome": "3"
                 },
                 {
-                    "text": "",
+                    "text": "Dartmouth",
                     "img_url": "assets/c4.jpg",
                     "outcome": "4"
                 }
@@ -95,22 +91,22 @@
             "id": "food",
             "answers": [
                 {
-                    "text": "",
+                    "text": "Pineapple Pizza",
                     "img_url": "assets/f1.jpg",
                     "outcome": "1"
                 },
                 {
-                    "text": "",
+                    "text": "Banana Dog",
                     "img_url": "assets/f2.jpg",
                     "outcome": "2"
                 },
                 {
-                    "text": "",
+                    "text": "Rice Bun",
                     "img_url": "assets/f3.jpg",
                     "outcome": "3"
                 },
                 {
-                    "text": "",
+                    "text": "PB & Pickle",
                     "img_url": "assets/f4.jpg",
                     "outcome": "4"
                 }
@@ -122,22 +118,22 @@
             "id": "fnight",
             "answers": [
                 {
-                    "text": "",
+                    "text": "Netflix and Chill ;)",
                     "img_url": "assets/fn1.jpg",
                     "outcome": "1"
                 },
                 {
-                    "text": "",
+                    "text": "Fratting",
                     "img_url": "assets/fn2.jpg",
                     "outcome": "2"
                 },
                 {
-                    "text": "",
+                    "text": "Reading",
                     "img_url": "assets/fn3.jpg",
                     "outcome": "3"
                 },
                 {
-                    "text": "",
+                    "text": "Sleeping",
                     "img_url": "assets/fn4.jpg",
                     "outcome": "4"
                 }

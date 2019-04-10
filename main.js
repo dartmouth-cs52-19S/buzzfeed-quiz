@@ -19,13 +19,13 @@ $.getJSON("data.json", function(data) {
             if (j < 2) {
                 $("#"+q.id+" ul.qrow:nth-child(1)")
                 .append("<li> <label> <img src='"+a.img_url
-                 +"'/> <input type='radio' name='"+q.name
+                 +"'/> <p>"+a.text+"</p> <input type='radio' name='"+q.name
                  +"' value='"+a.outcome+"'/> </label> </li>");
             }
             else {
                 $("#"+q.id+" ul.qrow:nth-child(2)")
                 .append("<li> <label> <img src='"+a.img_url
-                 +"'/> <input type='radio' name='"+q.name
+                 +"'/> <p>"+a.text+"</p> <input type='radio' name='"+q.name
                  +"' value='"+a.outcome+"'/> </label> </li>");
             }
         });
@@ -90,8 +90,10 @@ $(document).ready(function(){
         }
 
         $( "body" ).find("div.result").remove();
-        $( "body" ).append( "<div class='result'>"+result+"</div>").slideDown().show('slow');
-    });
+        $( "body" ).append( "<div class='result'>"+result+"</div>");
+        $(".result").hide();
+        $(".result").show(3000).slideDown();
+    }); 
 
 
     $('label').click(function()
@@ -99,8 +101,10 @@ $(document).ready(function(){
             newid = $(this).parent().parent().parent().attr('id')
             $("#" + newid).find("label").css("opacity", 0.5);
             $("#" + newid).find("label").find("img").css("border", "0px solid #a3152c");
+            $("#" + newid).find("label").find("p").css("color", "grey");
 
             $(this).css("opacity", 1);
             $(this).find("img").css("border", "10px solid #a3152c");
+            $(this).find("p").css("color", "red");
     }); 
 });
